@@ -13,7 +13,7 @@ if st.button("Predict Emotion"):
         st.warning("Please enter some text")
     else:
         response = requests.post(
-            "http://<EC2_PUBLIC_IP>:8000",
+            "http://backend:8000/predict",
             json={"text": user_input}
         )
 
