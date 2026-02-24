@@ -90,8 +90,6 @@ It highlights full-stack ML capabilities from preprocessing to cloud deployment.
 
 ## 🏗 System Architecture
 
-## 🏗 System Architecture
-
   User  
    │  
    ▼  
