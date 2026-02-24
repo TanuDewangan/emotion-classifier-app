@@ -90,11 +90,24 @@ It highlights full-stack ML capabilities from preprocessing to cloud deployment.
 
 ## 🏗 System Architecture
 
-User → Streamlit (Frontend) → FastAPI (Backend) → ML Model  
-             ↓  
-        Docker Containers  
-             ↓  
-          AWS EC2
+## 🏗 System Architecture
+
+  User  
+   │  
+   ▼  
+Streamlit (Frontend)  
+   │  
+   ▼  
+FastAPI (Backend)  
+   │  
+   ▼  
+ML Model  
+   │  
+   ▼  
+Docker Containers  
+   │  
+   ▼  
+AWS EC2  
 
 ---
 
