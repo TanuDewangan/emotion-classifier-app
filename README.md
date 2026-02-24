@@ -16,7 +16,8 @@ A Dockerized Emotion Classification Web Application deployed on AWS EC2 with CI/
 ---
 
 ## 🚀 Live Demo
-http://16.171.5.109/
+
+🔗 [Live Application](http://16.171.5.109/)
 
 ---
 
@@ -28,6 +29,9 @@ This project is an end-to-end Emotion Classification system that:
 - Uses a trained ML model to classify emotion
 - Displays prediction via Streamlit frontend
 - Exposes API using FastAPI backend
+
+This project demonstrates how to build, containerize, and deploy a production-ready NLP model with automated CI/CD on AWS.
+It highlights full-stack ML capabilities from preprocessing to cloud deployment.
 
 ---
 
@@ -53,7 +57,7 @@ This project is an end-to-end Emotion Classification system that:
 
 ### 🔹 Text Cleaning
 - lowercasing
-- remove punctuations, numbers, emojis, stopwords
+- Remove punctuation, numbers, emojis, and stopwords
 
 ### 🔹 Text Vectorization
 - Bag of Words
@@ -65,22 +69,32 @@ This project is an end-to-end Emotion Classification system that:
 
 ### Modeling and Hyperparameter tuning
 - Naive Bayes
-- **Linear Regression**
+- **Logistic Regression**
 - GridSearchCV
 
 ### Final Model Performance
-**Weighted F1-score ≈ 0.901730**
+**Weighted F1-score: 0.90**
 
 ---
 
 ## 🔁 CI/CD Pipeline (GitHub Actions)
 
 - On every push to main branch:
-  - GitHub Actions triggers deployment
-  - SSH into AWS EC2
-  - Pull latest code
-  - Rebuild Docker containers
-  - Restart services automatically
+    - Trigger: Push to `main` branch
+    - Secure SSH connection to AWS EC2
+    - Pull latest repository changes
+    - Rebuild Docker images
+    - Restart containers automatically
+
+---
+
+## 🏗 System Architecture
+
+User → Streamlit (Frontend) → FastAPI (Backend) → ML Model  
+             ↓  
+        Docker Containers  
+             ↓  
+          AWS EC2
 
 ---
 
