@@ -12,6 +12,6 @@ services:
     build: ./frontend
     container_name: emotion_frontend
     ports:
-      - "8501:8501"
+      - "80:8501"
     depends_on:
       - backend
