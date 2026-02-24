@@ -1,6 +1,6 @@
 # Emotion Classifier App 🎭
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![NLP](https://img.shields.io/badge/NLP-Text%20Classification-purple)
 ![TF-IDF](https://img.shields.io/badge/Feature%20Engineering-TF--IDF-8A2BE2)
 ![Bag of Words](https://img.shields.io/badge/Feature%20Engineering-Bag%20of%20Words-6A5ACD)
@@ -101,6 +101,7 @@ This project is an end-to-end Emotion Classification system that:
 Clone the repository:
 
 git clone https://github.com/TanuDewangan/emotion-classifier-app.git
+
 cd emotion-classifier-app
 
 Build and run using Docker:
